@@ -27,14 +27,20 @@
         <br>
           <!-- Bootstrap checkboxes -->
       <div class="container">
+        <form id="passwordGeneratorForm" class="form">
           
+          <label for="passwordLengthNumber">Number of Characters</label>
+          <div>
+            <input type="range" min="8" max="128" value="20" id="passwordLengthRange">
+            <input type="number" min="8" max="128" value="20" id="passwordLengthNumber">
+          </div>
+
           <div class="checkbox">
             <label for="includeUppercase">
               <span>Include uppercase letters:</span> 
             </label>
             <input type="checkbox" id="includeUppercase" class="checkbox style-2 pull-right" checked="checked">
           </div>
-
           
           <div class="checkbox">
             <label for="includeLowercase">
@@ -43,14 +49,12 @@
             <input type="checkbox" id="includeLowercase" class="checkbox style-2 pull-right" checked="checked">
           </div>
 
-          
           <div class="checkbox">
             <label for="includeNumbers">
               <span>Include numbers:</span> 
             </label>
             <input type="checkbox" id="includeNumbers" class="checkbox style-2 pull-right" checked="checked">
           </div>
-
           
           <div class="checkbox">
             <label for="includeSymbols">
@@ -59,6 +63,7 @@
             <input type="checkbox" id="includeSymbols" class="checkbox style-2 pull-right" checked="checked">
           </div>
 
+        </form>
       </div><!-- container -->
 
         <div class="card-body">
@@ -73,9 +78,9 @@
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>
-      </div>
+      </div><!-- card -->
 
-    </div>
+    </div><!-- wrapper -->
 
     <!-- Custom JS -->
     <script src="script.js"></script>

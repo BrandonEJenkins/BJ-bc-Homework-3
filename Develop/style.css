@@ -18,6 +18,12 @@ body {
 }
 
 .wrapper {
+  /*
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  */
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
@@ -29,6 +35,17 @@ header {
   padding-top: 0px;
   color: hsl(206, 17%, 28%);
 }
+
+
+.form {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 1rem;
+  column-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .card {
   background-color: hsl(0, 0%, 100%);
